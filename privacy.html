@@ -77,7 +77,7 @@
 
 <h2 id="security">Security</h2>
 
-<p>Zyven encrypts local SQLite databases and SQLite database snapshots using SQLCipher. The operator configures a private encryption key through <code>DATA_ENCRYPTION_KEY</code>; the key is not stored in the public source repository. MongoDB encryption at rest depends on the selected MongoDB provider and its deployment configuration. Operators must protect the key and any database copies or backups made outside Zyven. No online service or data transmission can be guaranteed completely secure.</p>
+<p>Zyven stores bot data in local database files and may synchronize it with a MongoDB provider. Encryption for local storage depends on the bot host and its disk configuration; encryption for MongoDB depends on the selected provider and deployment settings. The bot operator is responsible for limiting access to stored data and protecting database copies and backups. No online service or data transmission can be guaranteed completely secure.</p>
 
 <h2 id="changes-and-contact">Changes and contact</h2>
 
