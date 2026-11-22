@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Zyven Privacy Policy | zyven-privacy-policy</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Zyven Privacy Policy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Public privacy policy for the Zyven Discord bot, maintained by Soulhuiyaar." />
+<meta property="og:description" content="Public privacy policy for the Zyven Discord bot, maintained by Soulhuiyaar." />
+<link rel="canonical" href="https://soulhuyaarqt.github.io/zyven-legal/privacy.html" />
+<meta property="og:url" content="https://soulhuyaarqt.github.io/zyven-legal/privacy.html" />
+<meta property="og:site_name" content="zyven-privacy-policy" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Zyven Privacy Policy" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Public privacy policy for the Zyven Discord bot, maintained by Soulhuiyaar.","headline":"Zyven Privacy Policy","name":"zyven-privacy-policy","url":"https://soulhuyaarqt.github.io/zyven-legal/privacy.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <style>body{font:16px/1.65 system-ui,sans-serif;color:#222;background:#f5f7fb;margin:0}.container-lg{max-width:850px;margin:2rem auto;padding:2rem;background:#fff;border-radius:12px}h1,h2{line-height:1.25}a{color:#3b5ccc}li{margin:.5rem 0}</style>
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/zyven-privacy-policy/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://soulhuyaarqt.github.io/zyven-legal/privacy.html">zyven-privacy-policy</a></h1>
+      
+
+      <h1 id="zyven-privacy-policy">Zyven Privacy Policy</h1>
+
+<p><strong>Effective date: November 21, 2026</strong></p>
+
+<p>Zyven is a multipurpose Discord bot developed by Zyven Development. This policy describes information the bot may process when it is added to a Discord server, how that information is used and stored, and how to ask questions or request deletion. Features vary by server configuration.</p>
+
+<h2 id="information-zyven-processes">Information Zyven processes</h2>
+
+<p>Depending on the features a server enables, Zyven may process:</p>
+
+<ul>
+  <li><strong>Discord and server information:</strong> Discord user, server, channel, role, and message IDs; usernames and display names; avatars; member roles and join times; and server configuration.</li>
+  <li><strong>Member and presence information:</strong> join, leave, role, and moderation events, and member or server counts. If a server enables custom-status or vanity-role features, Zyven reads a member’s custom status or presence as needed to apply or remove the configured role. Presence information is not needed for every feature.</li>
+  <li><strong>Message information:</strong> message text to recognize prefix commands and provide configured features such as AutoMod, anti-spam, autoresponders, autoreactions, leveling, and AI chat. If a server enables message event logging, edited or deleted message text and available attachment links may be sent to that server’s configured log channel. Server administrators choose those channels and manage their access.</li>
+  <li><strong>Feature records:</strong> moderation actions and warnings, audit and security events, server settings, trusted-member lists, leveling records, tickets, voice or music settings, and other preferences needed for enabled features.</li>
+  <li><strong>AI conversations:</strong> when AI features are enabled and used, prompts and relevant recent conversation context are sent to Groq’s API to generate replies. Zyven stores a limited recent conversation history and AI preferences so a conversation can continue with context. Users can clear saved AI conversation data using the available AI clear command. Server administrators can disable automatic AI replies.</li>
+</ul>
+
+<h2 id="how-information-is-used">How information is used</h2>
+
+<p>Zyven uses this information to respond to commands, provide configured server features, apply administrator-selected moderation and security rules, manage roles, preserve settings and progress, operate music and AI features, troubleshoot errors, and prevent abuse.</p>
+
+<h2 id="storage-and-service-providers">Storage and service providers</h2>
+
+<p>Zyven stores feature settings and records in SQLite on the bot operator’s host. When configured, it also mirrors records to MongoDB for persistence and recovery. The operator may keep database snapshots for recovery. The bot operator and the hosting and database providers may process stored information.</p>
+
+<p>Zyven communicates with Discord to receive permitted events and perform bot actions. AI prompts are sent to Groq when AI features are used. Music searches or playback requests may be sent to the Lavalink service configured by the operator. Other external services may process information needed for a feature when that feature is enabled; those services have their own terms and privacy practices.</p>
+
+<h2 id="retention-and-deletion">Retention and deletion</h2>
+
+<p>There is no single retention period for every kind of information. Feature settings and records may remain while needed to provide the feature or until a user, server administrator, or bot operator clears them. A deleted record may remain in a recovery snapshot until that snapshot is replaced or removed. Message logs posted to a Discord channel are controlled by that server’s administrators and Discord’s own features.</p>
+
+<p>For questions or a deletion request about information stored by Zyven, contact the operators in the <a href="https://discord.gg/gm6pAGpNGu">Zyven support server</a>. Include the relevant Discord user or server ID and identify the feature or record. For message logs in a server channel, contact that server’s administrators. Limited information may need to be retained for security, abuse prevention, backup recovery, or legal obligations.</p>
+
+<h2 id="security">Security</h2>
+
+<p>Zyven encrypts local SQLite databases and SQLite database snapshots using SQLCipher. The operator configures a private encryption key through <code>DATA_ENCRYPTION_KEY</code>; the key is not stored in the public source repository. MongoDB encryption at rest depends on the selected MongoDB provider and its deployment configuration. Operators must protect the key and any database copies or backups made outside Zyven. No online service or data transmission can be guaranteed completely secure.</p>
+
+<h2 id="changes-and-contact">Changes and contact</h2>
+
+<p>This policy may change when Zyven’s features or data practices change. The current version will be available at this page. For privacy questions, contact the Zyven operators through the <a href="https://discord.gg/gm6pAGpNGu">support server</a>.</p>
+
+<p>This notice describes Zyven’s current source code and configured integrations as reviewed on November 21, 2026. Third-party providers are governed by their own policies and terms. This notice is not legal advice.</p>
+
+
+      
+    </div>
+  </body>
+</html>
+
